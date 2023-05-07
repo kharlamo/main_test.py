@@ -1,20 +1,9 @@
 import time
+
 import pytest
 import pytest_check as check
 
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.chrome.options import Options as chrome_options
-from selenium.webdriver.support.ui import Select
-
-from pom.page_nav import PageNav
-from pom import database_meth
-from base import connectionbase
-from base.dataconfing import Config
 from pom.fieldreestr_tests_funcs import FieldsReestrFuncs
-import timeit
 
 
 @pytest.mark.usefixtures('setup')
